@@ -8,13 +8,14 @@ body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   background-image: url(../images/bgtile.png);
-  background-repeat: repeat-x; 
+  background-repeat: repeat-x;
 }
 
 .main {
-  padding: 40px 100px;
+  height: auto;
+  width: 75%;
+  margin: 3% auto;
 }
-
 
 #iPhone {
   display: block;
@@ -27,53 +28,74 @@ button {
   background-color: #1c5380;
   float: right;
   position: relative;
-  vertical-align: middle;
+  margin: 20px 0 4px;
+  height: 3em;
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+  color: lightgrey;
+  border: 1px solid #1c5380;
+  border-radius: 5%;
+  padding: 0px;
+  box-shadow: 2px 2px 19px 0px rgba(0,0,0,0.75);
 }
+
+button img{
+  margin: -6px 3px;
+}
+
+button span {
+  font-size: 1.3em;
+  margin: 0 auto;
+}
+
 #text-box {
-  margin-left: 20px;
-  padding: 10px;
+  padding: 3% 2%;
+  float: right;
+  width:60%
 }
 
 #text {
   display: inline-block;
-  border-radius: 15px;
   width: 55%;
-  background-color: #FFF;
   vertical-align: middle;
   padding: 30px;
-  text-align: left;
 }
 
-#text-box h1{
-  color: #06365F;
+#text-box h1 {
+  color: #06365f;
 }
 
-ul {
-  display: block;
-  float: left;
-  padding: 15px 40px;
-  margin: 0 20px 0 0;
-  margin: 0 10px;
+.navbar {
   text-align: center;
-  width:80%;
-  color: #1c5380;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-li a {
-  display: inline-block;
-  margin-left: 5px;
+  margin: 20px 0 0;
+  padding: 10px 0;
   position: absolute;
-  color: #1c5380;
-  text-decoration: none;
-  list-style-type: none;
-  text-transform: uppercase;
+  bottom: 0;
+  left:0;
+  width: 100%;
 }
 
 #copyright {
   position: relative;
-  float: left;
   color: lightgrey;
-  margin-left: 15px;
+}
+
+ul {
+  margin: 2% 5%;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li{
+  margin: 0 2%;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline;
+}
+
+nav a {
+  color: #1c5380;
+  font-size: 0.8em;
 }
